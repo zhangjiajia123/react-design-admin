@@ -15,6 +15,7 @@ module.exports = {
     ],
     // 为了确保与旧版React的兼容性，进行显式配置（假设项目中已确认不存在兼容问题）
     ["@babel/preset-react", { runtime: "automatic", importSource: "react" }],
-    "@babel/preset-typescript", // 处理TypeScript语法
-  ],
-};
+    // 处理TypeScript语法
+    "@babel/preset-typescript"
+  ]
+}
