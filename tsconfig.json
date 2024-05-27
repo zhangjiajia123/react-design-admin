@@ -14,7 +14,7 @@
     "target": "es2016",                                  /* 为发射的 JavaScript 设置 JavaScript 语言版本，并包含兼容库声明*/
     // "lib": [],                                        /* 指定一组捆绑的库声明文件，用于描述目标运行环境 */
     // "jsx": "preserve",                                /* 指定生成的 JSX 代码 */
-    // "experimentalDecorators": true,                   /* 允许对传统实验装饰器的实验支持。 */
+    "experimentalDecorators": true,                   /* 允许对传统实验装饰器的实验支持。 */
     // "emitDecoratorMetadata": true,                    /* 为源文件中的装饰声明提供设计类型元数据 */
     // "jsxFactory": "",                                 /* 指定针对 React JSX 发射时使用的 JSX 工厂函数，例如 "React.createElement "或 "h" */
     // "jsxFragmentFactory": "",                         /* 指定针对 React JSX emit 时用于片段的 JSX 片段引用，例如 "React.Fragment "或 "Fragment" */

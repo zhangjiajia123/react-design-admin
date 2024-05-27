@@ -1,8 +1,9 @@
 import path from "path"
 import { merge } from "webpack-merge"
+import baseConfig from "./webpack.base";
 import { Configuration as WebpackConfiguration } from "webpack"
 import { Configuration as WebpackDevServerConfiguration } from "webpack-dev-server"
-import baseConfig from "./webpack.base";
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
 }
@@ -14,6 +15,9 @@ const publicPath = path.join(__dirname, "../public")
 const devConfig: Configuration = merge(baseConfig, {
   mode: "development", // 开发模式,打包更加快速,省了代码优化步骤
   devtool: "eval-cheap-module-source-map",
+  plugins: [
+    new ReactRefreshWebpackPlugin(), // 添加热更新插件
+  ],
   devServer: {
     host,
     port,

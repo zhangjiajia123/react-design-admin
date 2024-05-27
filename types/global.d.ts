@@ -7,4 +7,5 @@ declare module 'process' {
     }
   }
 }
-declare function openBrowser (url: string): void
+declare module 'ReactRefreshWebpackPlugin'
+
