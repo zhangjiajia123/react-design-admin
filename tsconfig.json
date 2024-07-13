@@ -11,10 +11,10 @@
     // "disableReferencedProjectLoad": true,             /* 减少 TypeScript 自动加载的项目数量 */
 
     /* Language and Environment（语言与环境） */
-    "target": "es2016",                                  /* 为发射的 JavaScript 设置 JavaScript 语言版本，并包含兼容库声明*/
+    "target": "es2016" /* 为发射的 JavaScript 设置 JavaScript 语言版本，并包含兼容库声明*/,
     // "lib": [],                                        /* 指定一组捆绑的库声明文件，用于描述目标运行环境 */
     // "jsx": "preserve",                                /* 指定生成的 JSX 代码 */
-    "experimentalDecorators": true,                   /* 允许对传统实验装饰器的实验支持。 */
+    "experimentalDecorators": true /* 允许对传统实验装饰器的实验支持。 */,
     // "emitDecoratorMetadata": true,                    /* 为源文件中的装饰声明提供设计类型元数据 */
     // "jsxFactory": "",                                 /* 指定针对 React JSX 发射时使用的 JSX 工厂函数，例如 "React.createElement "或 "h" */
     // "jsxFragmentFactory": "",                         /* 指定针对 React JSX emit 时用于片段的 JSX 片段引用，例如 "React.Fragment "或 "Fragment" */
@@ -23,18 +23,21 @@
     // "noLib": true,                                    /* 禁止包含任何库文件，包括默认的 lib.d.ts */
     // "useDefineForClassFields": true,                  /* 排放符合 ECMAScript 标准的类字段 */
     // "moduleDetection": "auto",                        /* 控制用于检测模块格式 JS 文件的方法 */
-    "jsx": "react-jsx",                                  /* 指定生成的 JSX 代码 */
+    "jsx": "react-jsx" /* 指定生成的 JSX 代码 */,
 
     /* Modules（模块） */
-    "module": "commonjs",                                /* 指定生成的模块代码 */
+    "module": "commonjs" /* 指定生成的模块代码 */,
     // "rootDir": "./",                                  /* 指定源文件的根文件夹 */
     // "moduleResolution": "node10",                     /* 指定 TypeScript 如何从给定的模块指定符查找文件 */
-    "baseUrl": "./",                                  /* 指定用于解析非相关模块名称的基本目录 */
+    "baseUrl": "./" /* 指定用于解析非相关模块名称的基本目录 */,
     "paths": {
       "@/*": ["src/*"]
-    },                                      /* 指定一组条目，将导入重新映射到其他查找位置 */
+    } /* 指定一组条目，将导入重新映射到其他查找位置 */,
     // "rootDirs": [],                                   /* 在解析模块时，允许将多个文件夹视为一个 */
-    "typeRoots": ["./types/*.d.ts", "node_modules/@types"],                                  /* 指定多个类似于"./node_modules/@types "的文件夹 */
+    "typeRoots": [
+      "./types/*.d.ts",
+      "node_modules/@types"
+    ] /* 指定多个类似于"./node_modules/@types "的文件夹 */,
     // "types": [],                                      /* 指定不在源文件中引用而要包含的类型包名称 */
     // "allowUmdGlobalAccess": true,                     /* 允许从模块访问 UMD 全局 */
     // "moduleSuffixes": [],                             /* 解析模块时要搜索的文件名后缀列表 */
@@ -80,12 +83,12 @@
     // "isolatedModules": true,                          /* 确保每个文件都能安全地转译，而无需依赖其他导入 */
     // "verbatimModuleSyntax": true,                     /* 不要转换或省略任何未标记为纯类型的导入或导出，确保根据 "模块 "设置以输出文件格式写入 */
     // "allowSyntheticDefaultImports": true,             /* 当模块没有默认导出时，允许 "import x from y" */
-    "esModuleInterop": true,                             /* 放出额外的 JavaScript，以简化对 CommonJS 模块导入的支持。这将启用 "allowSyntheticDefaultImports"，以实现类型兼容性 */
+    "esModuleInterop": true /* 放出额外的 JavaScript，以简化对 CommonJS 模块导入的支持。这将启用 "allowSyntheticDefaultImports"，以实现类型兼容性 */,
     // "preserveSymlinks": true,                         /* 禁止根据实际路径解析符号链接。这与 node 中的标志相同 */
-    "forceConsistentCasingInFileNames": true,            /* 确保套管进口正确 */
+    "forceConsistentCasingInFileNames": true /* 确保套管进口正确 */,
 
     /* Type Checking (类型检查)*/
-    "strict": true,                                      /* 启用所有严格的类型检查选项 */
+    "strict": true /* 启用所有严格的类型检查选项 */,
     // "noImplicitAny": true,                            /* 启用隐含 "any "类型的表达式和声明的错误报告功能 */
     // "strictNullChecks": true,                         /* 类型检查时，考虑 "空 "和 "未定义 */
     // "strictFunctionTypes": true,                      /* 在分配函数时，检查以确保参数和返回值与子类型兼容 */
@@ -107,8 +110,7 @@
 
     /* Completeness（完整性） */
     // "skipDefaultLibCheck": true,                      /* 跳过 TypeScript 附带的 .d.ts 文件类型检查 */
-    "skipLibCheck": true,                                /* 跳过所有 .d.ts 文件的类型检查 */
-    
+    "skipLibCheck": true /* 跳过所有 .d.ts 文件的类型检查 */
   },
   "include": ["./src", "./types/*.d.ts"]
 }

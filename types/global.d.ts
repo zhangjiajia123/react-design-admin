@@ -8,4 +8,3 @@ declare module 'process' {
   }
 }
 declare module 'ReactRefreshWebpackPlugin'
-

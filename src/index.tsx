@@ -1,6 +1,5 @@
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import App from '@/app';
+import App from '@/app'
 const root = document.querySelector('#root')
-createRoot(root!).render(
-  <App />
-)
+createRoot(root!).render(<App />)
